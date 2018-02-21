@@ -57,7 +57,22 @@ body {
 	background-size: cover;
 }
 
+.benefits {
+	background-color: #f0efef;
+}
 
+.block-quote {
+	background: url("../images/testimonial_bg.jpg") no-repeat center top rgb(3,48,72);
+	background-size: cover;
+}
+
+.sign-up {
+	background-color: #f9e42e;
+}
+
+footer {
+	background-color: #121212;
+}
 
 
 
