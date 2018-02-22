@@ -12,7 +12,8 @@ Developer @GA in NYC
 
 /* Box Model Hack */
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
 }
 
 /* Clear fix hack */
@@ -32,8 +33,23 @@ Developer @GA in NYC
 
 body {
 	color: #000;
+	font-family: 'Open Sans', sans-serif;
 	line-height: 1.5;
-	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-weight: 800;
+	color: #FFF;
+	font-size: 48px;
+	line-height: 0;
+
+}
+
+h2 {
+	font-weight: 600;
+	color: #FFF;
+	font-size: 47px;
+	line-height: 1.5;
 }
 
 
@@ -44,17 +60,31 @@ body {
 /* Center the container */
 .container {
 	max-width: 90%;
-  margin: 0 auto;
-  width: 1024px;
+	margin: 0 auto;
+	width: 1024px;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
+.logo {
+	left: 120px;
+	position: absolute;
+	top: 45px;
+	z-index: 100;
+}
+
 .intro {
-	background: url("../images/header_bg.jpg") no-repeat center top rgb(134,141,157);
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
+	background: url("../images/header_bg.jpg") no-repeat center top rgb(134,141,157);
+	height: 100%;
+	padding-bottom: 310px;
+	padding-top: 200px;
+	position: relative;
+	text-align: center;
 }
 
 .benefits {
@@ -62,8 +92,8 @@ body {
 }
 
 .block-quote {
-	background: url("../images/testimonial_bg.jpg") no-repeat center top rgb(3,48,72);
 	background-size: cover;
+	background: url("../images/testimonial_bg.jpg") no-repeat center top rgb(3,48,72);
 }
 
 .sign-up {
@@ -72,6 +102,13 @@ body {
 
 footer {
 	background-color: #121212;
+}
+
+.footer-logo {
+	color: #f9e42e;
+	font-size: 48px;
+	font-weight: 800;
+	/*line-height: 0;*/
 }
 
 
