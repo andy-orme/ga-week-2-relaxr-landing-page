@@ -14,6 +14,10 @@ Developer @GA in NYC
 * {
 	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #606161;
+	font-size: 27px;
+	line-height: 1.5;
 }
 
 /* Clear fix hack */
@@ -52,6 +56,20 @@ h2 {
 	line-height: 1.5;
 }
 
+h3 {
+	font-weight: 600;
+	color: #033048;
+	font-size: 40px;
+	line-height: 1.5;
+}
+
+p {
+	font-weight: 300;
+	color: #606161;
+	font-size: 27px;
+	line-height: 1.5;
+}
+
 
 /******************************************
 /* LAYOUT
@@ -64,40 +82,79 @@ h2 {
 	width: 1024px;
 }
 
+.banner-container {
+	max-width: 90%;
+	margin: 0 auto;
+	width: 1024px;
+}
+
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
 .logo {
-	left: 120px;
-	position: absolute;
+	margin: 0 auto;
+	max-width: 90%;
+	position: relative;
 	top: 45px;
+	width: 1024px;
 	z-index: 100;
 }
 
 .intro {
+	background-image: url("../images/header_bg.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background: url("../images/header_bg.jpg") no-repeat center top rgb(134,141,157);
-	height: 100%;
-	padding-bottom: 310px;
-	padding-top: 200px;
+	/*height: 700px;*/
 	position: relative;
 	text-align: center;
+}
+
+.intro .container {
+	padding-top: 15%;
+	padding-bottom: 15%;
 }
 
 .benefits {
 	background-color: #f0efef;
 }
 
+.benefits .container {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	padding-right: 20%;
+}
+
 .block-quote {
+	background-image: url("../images/testimonial_bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
-	background: url("../images/testimonial_bg.jpg") no-repeat center top rgb(3,48,72);
+	position: relative;
+	text-align: center;
+}
+
+.quote {
+	color: white;
+}
+
+.block-quote .container {
+	padding-top: 75px;
+	padding-bottom: 100px;
+	width: 596px;
+	font-style: italic;
 }
 
 .sign-up {
 	background-color: #f9e42e;
+}
+
+.sign-up .container {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 footer {
@@ -108,7 +165,6 @@ footer {
 	color: #f9e42e;
 	font-size: 48px;
 	font-weight: 800;
-	/*line-height: 0;*/
 }
 
 
