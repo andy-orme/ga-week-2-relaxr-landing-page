@@ -15,12 +15,12 @@
 				<h1>Relaxr</h1>
 				<nav>
 					<ul>
-						<li>About</li>
-						<li>FAQ</li>
-						<li>Team</li>
-						<li>Contact Us</li>
-						<li>Blog</li>
-					</ul>
+						<li><a href="./index.html">About</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Team</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="./blog.html">Blog</a></li>
+					</ul>	
 				</nav>
 			</div>
 		</header>
@@ -28,20 +28,22 @@
 		<div class="container clearfix">
 
 			<main>
-				<article>
-					<h3>How I implemented Relaxr in 2 weeks and changed my life.</h3>
+				<article class="clearfix">
+					<h3>How I implemented Relaxr in 2 weeks and changed my life</h3>
 					<img src="./images/blog_photo1.jpg" alt="blog-image-1">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae debitis, voluptates pariatur voluptate ducimus quisquam animi consectetur. Iure distinctio alias, deleniti, possimus atque libero in explicabo enim debitis, non expedita.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur vero optio, quod reiciendis earum facere exercitationem nihil quia saepe voluptas facilis temporibus quibusdam similique inventore consequuntur molestiae libero cumque placeat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid provident velit neque a, quidem incidunt nam reprehenderit, consequatur explicabo, harum sequi quaerat doloremque ratione ab nihil sint. Ad, delectus, doloribus.
 					</p>
 					<a href="#">Read more ></a>
 				</article>
 
-				<article>
+				<br>
+
+				<article class="clearfix">
 					<h3>I traveled across the globe thanks to Relaxr's Excel automation</h3>
 					<img src="./images/blog_photo2.jpg" alt="blog-image-2">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae debitis, voluptates pariatur voluptate ducimus quisquam animi consectetur. Iure distinctio alias, deleniti, possimus atque libero in explicabo enim debitis, non expedita.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae debitis, voluptates pariatur voluptate ducimus quisquam animi consectetur. Iure distinctio alias, deleniti, possimus atque libero in explicabo enim debitis, non expedita. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quisquam est dolorum odio, praesentium suscipit, in facilis, facere animi necessitatibus molestiae ratione. Quis error minus quibusdam laborum, necessitatibus alias, ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 					</p>
 					<a href="#">Read more ></a>
 				</article>
@@ -59,13 +61,17 @@
 					</ul>
 				</section>
 
+				<br>
+
 				<section class="about">
 					<h4>About Relaxr</h4>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae assumenda laborum minus rerum maiores ab ducimus consequatur iure temporibus similique aut, saepe, natus illum et harum vel velit qui officiis.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae assumenda laborum minus rerum maiores.
 					</p>
 					<a href="#">Learn more</a>
 				</section>
+
+				<br>
 
 				<section class="advert">
 					<img src="./images/ad-unit.png" alt="">
@@ -76,7 +82,8 @@
 
 		<section class="sign-up">
 			<div class="container">
-				<button class="button2">Sign up now!</button>
+				<!-- <a href="#">Sign up now!</a> -->
+				<button onclick="myFunction()">Sign up now!</button>
 			</div>
 		</section>
 
@@ -92,6 +99,12 @@
 				</p>
 			</div>
 		</footer>
+
+		<script>
+			function myFunction() {
+				alert("We're Not Ready For Sign-Ups...Yet.");
+			}
+		</script>
 
 	</body>
 </html>

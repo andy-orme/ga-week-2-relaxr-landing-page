@@ -14,11 +14,27 @@
 			<h1 class="container logo">Relaxr</h1>
 		</header> -->
 
+		<header class="navigation">
+			<div class="container clearfix">
+				<h1>Relaxr</h1>
+				<nav>
+					<ul>
+						<li><a href="./index.html">About</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Team</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="./blog.html">Blog</a></li>
+					</ul>	
+				</nav>
+			</div>
+		</header>
+
 		<section class="intro">
 			<div class="container">
 				<h2>Get piece of mind with a single tap</h2>
 				<br>
-				<button class="button1">Get it now</button>
+				<!-- <button class="button1">Get it now</button> -->
+				<a href="#">Get it now</a>
 			</div>
 		</section>
 
@@ -49,9 +65,10 @@
 		</section>
 
 		<section class="sign-up">
-				<div class="container">
-					<button class="button2">Sign up now!</button>
-				</div>
+			<div class="container">
+				<!-- <a href="#">Sign up now!</a> -->
+				<button onclick="myFunction()">Sign up now!</button>
+			</div>
 		</section>
 
 		<footer>
@@ -66,5 +83,12 @@
 				</p>
 			</div>
 		</footer>
+
+		<script>
+			function myFunction() {
+				alert("We're Not Ready For Sign-Ups...Yet.");
+			}
+		</script>
+		
 	</body>
 </html>
