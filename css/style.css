@@ -1,7 +1,7 @@
 /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
+Project Name: Relaxr Project
+Client: Relaxr
+Author: Andy Orme
 Developer @GA in NYC
 */
 
@@ -10,18 +10,11 @@ Developer @GA in NYC
 /* SETUP
 /*******************************************/
 
-/* Box Model Hack */
-* {
-	box-sizing: border-box;
-	color: #606161;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 27px;
-	font-weight: 300;
-	line-height: 1.5;
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
-/* Clear fix hack */
-/*.clearfix:before,
+.clearfix:before,
 .clearfix:after {
     content: " ";
     display: table;
@@ -29,15 +22,18 @@ Developer @GA in NYC
 
 .clearfix:after {
     clear: both;
-}*/
+}
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
 body {
-	color: #000;
+	background-color: #f0efef;
+	color: #606161;
 	font-family: 'Open Sans', sans-serif;
+	font-size: 27px;
+	font-weight: 300;
 	line-height: 1.5;
 }
 
@@ -46,7 +42,8 @@ h1 {
 	font-size: 48px;
 	font-weight: 800;
 	line-height: 0;
-
+	float: left;
+	width:30%;
 }
 
 h2 {
@@ -79,6 +76,31 @@ ul {
 	margin-left: 80px;
 }
 
+header {
+	height: 100px;
+	background-color: #033048;
+}
+
+nav {
+	float: left;
+	width: 70%;
+}
+
+nav ul {
+	margin-top: 30px;
+	float: right;
+}
+
+nav ul li {
+	color: #f9e42e;
+	display: inline-block;
+	margin: 0 20px;
+	font-size: 24px;
+}
+
+header h1 {
+	padding-top: 45px;
+}
 
 /******************************************
 /* LAYOUT
@@ -97,13 +119,15 @@ ul {
 /*******************************************/
 
 .logo {
-	margin: 0 auto;
-	max-width: 90%;
 	position: relative;
-	top: 45px;
-	width: 1024px;
 	z-index: 100;
 }
+
+
+/******************************************
+/* INTRO-SECTION
+/*******************************************/
+
 
 .intro {
 	background-image: url("../images/header_bg.jpg");
@@ -119,6 +143,27 @@ ul {
 	padding-top: 23%;
 }
 
+.button1 {
+	background-color: #f9e42e;
+	border-radius: 4px;
+	border:none;
+	color: #033048;
+	font-size: 28px;
+	font-weight: 600;
+	padding: 10px 60px;
+}
+
+.button1:hover {
+    background-color: #E3D02A;
+    color: #033048;
+}
+
+
+/******************************************
+/* BENEFITS SECTION
+/*******************************************/
+
+
 .benefits {
 	background-color: #f0efef;
 }
@@ -128,6 +173,12 @@ ul {
 	padding-right: 360px;
 	padding-top: 100px;
 }
+
+
+/******************************************
+/* BLOCK QUOTE SECTION
+/*******************************************/
+
 
 .block-quote {
 	background-image: url("../images/testimonial_bg.jpg");
@@ -159,6 +210,12 @@ ul {
 	width: 596px;
 }
 
+
+/******************************************
+/* FOOTER
+/*******************************************/
+
+
 .sign-up {
 	background-color: #f9e42e;
 }
@@ -167,6 +224,21 @@ ul {
 	padding-bottom: 30px;
 	padding-top: 30px;
 	text-align: center;
+}
+
+.button2 {
+	background-color: #033048;
+	border-radius: 4px;
+	border:none;
+	color: #FFF;
+	font-size: 28px;
+	font-weight: 600;
+	padding: 10px 60px;
+}
+
+.button2:hover {
+    background-color: #01161E;
+    color: #FFF;
 }
 
 footer {
@@ -197,35 +269,43 @@ footer .container p {
 	padding-top: 25px;
 }
 
-.button1 {
-	background-color: #f9e42e;
-	border-radius: 4px;
-	border:none;
-	color: #033048;
-	font-size: 28px;
-	font-weight: 600;
-	padding: 10px 60px;
+
+/******************************************
+/* 2 COLUMNS
+/*******************************************/
+
+main {
+	float: left;
+	width: 70%;
+	padding: 50px 40px 50px 0;
 }
 
-.button1:hover {
-    background-color: #E3D02A;
-    color: #033048;
+aside {
+	float: left;
+	width: 30%;
+	padding: 50px 0;
 }
 
-.button2 {
-	background-color: #033048;
-	border-radius: 4px;
-	border:none;
-	color: #FFF;
-	font-size: 28px;
-	font-weight: 600;
-	padding: 10px 60px;
+article img {
+	width: 100%;
 }
 
-.button2:hover {
-    background-color: #01161E;
-    color: #FFF;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
